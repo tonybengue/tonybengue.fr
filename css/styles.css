@@ -43,13 +43,13 @@ main {
 	text-align: center;
 }
 
-main > .intro {
+main>.intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 }
 
-main > .tagline {
+main>.tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
@@ -65,7 +65,26 @@ main > .tagline {
 
 .devto svg {
 	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
+	margin-left: 0.675rem;
+	;
 	width: 2.65rem;
 	height: 2.65rem;
+}
+
+.cv {
+	position: relative;
+	top: 20px;
+	margin: 0 auto;
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* width: 200px; */
+}
+
+.cv a {
+	color: white;
+	text-decoration: none;
+	margin-right: 50px;
+	font-size: 2.2rem;
+	display: inline-block;
 }
