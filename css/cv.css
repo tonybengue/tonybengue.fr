@@ -145,7 +145,6 @@ section i {
   /* font-size: 2.3rem; */
 }
 
-
 @media screen and (max-width: 960px) {
   body {
     flex-direction: column;
@@ -163,10 +162,22 @@ section i {
   }
 
   .big-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .moi img {
     width: 150px;
+  }
+
+  .block-part h2 {
+    font-size: 1.3rem;
+  }
+
+  .block-part .date {
+    font-size: 1.1rem;
+  }
+
+  .block-part .intitule {
+    font-size: 1.2rem;
   }
 }
