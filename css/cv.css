@@ -110,28 +110,6 @@ section i {
   padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 960px) {
-  body {
-    flex-direction: column;
-    align-items: center;
-    /* margin: 0 1rem; */
-    /* gap: 0; */
-  }
-
-  .block-left {
-    width: 90%;
-  }
-
-  .block-right {
-    width: 90%;
-  }
-
-  .block {
-    /* margin: 0; */
-    /* padding: 0; */
-  }
-}
-
 .moi img {
   width: 50%;
   display: block;
@@ -165,4 +143,30 @@ section i {
   filter: grayscale(0);
   transform: translateY(-13px);
   /* font-size: 2.3rem; */
+}
+
+
+@media screen and (max-width: 960px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 1rem; */
+    /* gap: 0; */
+  }
+
+  .block-left {
+    width: 90%;
+  }
+
+  .block-right {
+    width: 90%;
+  }
+
+  .big-title {
+    font-size: 1.4rem;
+  }
+
+  .moi img {
+    width: 150px;
+  }
 }
