@@ -30,7 +30,7 @@
       <h1>Tony Bengué</h1>
     </div>
     <p><i class="fas fa-briefcase"></i>Freelance développeur web et logiciel</p>
-    <p><i class="fas fa-calendar-week"></i>28 ans</p>
+    <p><i class="fas fa-calendar-week"></i><span>28</span> ans</p>
     <p><i class="fas fa-home"></i>Limoges, France</p>
     <p>
       <i class="fas fa-globe-europe"></i><a href="http://www.tonybengue.fr" target="_blank">www.tonybengue.fr</a>
@@ -64,7 +64,7 @@
     </div>
 
     <hr>
-    <p class="w3-large"><b><i class="fas fa-certificate"></i>Compétences</b></p>
+    <p><b><i class="fas fa-certificate"></i>Compétences</b></p>
     <p><i class="fas fa-globe-europe"></i> Web :</p>
     <p>HTML, CSS, JavaScript</p>
     <hr>
@@ -110,9 +110,25 @@
           Juin 2021 - Aujourdh'ui
         </h3>
         <a href="https://g.page/r/CcWZqN2r4ZaVEAg/" target="_blank">Mon entreprise</a>
-        <p>En juin 2021 je lance mon activité de développeur freelance basée à Limoges (87) afin d'apporter mes
-          compétences et services auprès des professionnels et particuliers ayant des besoins en ce qui concerne le
-          développement Web, mobile et logiciel</p>
+        <p>En juin 2021 je lance mon activité de développeur freelance basée à Limoges (87) afin d'apporter mes compétences et services auprès des professionnels et particuliers ayant des besoins en ce qui concerne le
+          développement Web, mobile et logiciel
+        </p>
+
+        <div class="realisations">
+          <div>
+            Traduction automatique de pages Html à l'aide de l'API Yandex
+          </div>
+          <div>
+            Développement d'une extension Google Chrome personnalisée de commande de chaussures
+          </div>
+          <div>
+            Correction de bugs et optimisation de site sous le CMS Prestashop
+          </div>
+          <div>
+            Développement d'un script Python permettant de scraper des données de bookmakers (betclic, unibet, bet365, winnamax) puis les envoyer via un bot Telegram
+          </div>
+        </div>
+
       </div>
 
       <div class="block-part">
@@ -135,7 +151,8 @@
           Avril 2018 - Mai 2018
         </h3>
         <a href="https://www.brianceroselle.fr/" target="_blank">AFR Briance Roselle</a>
-        <p>Durant ce stage, j'ai dû m'occuper du développement du site de existant sous le CMS Joomla afin de rajouter des fonctionnalités et le faire évoluer</p>
+        <p>Durant ce stage, j'ai dû m'occuper du développement du site de existant sous le CMS Joomla afin de rajouter
+          des fonctionnalités et le faire évoluer</p>
       </div>
 
       <div class="block-part">
@@ -266,7 +283,8 @@
       <div class="block-part">
         <h2 class="intitule">Développement de jeux vidéo</h2>
         <p>
-          Développement de jeux vidéos en Löve2d / Lua grâce à la formation <a href="https://www.gamecodeur.fr" target="_blank">Gamecodeur</a>
+          Développement de jeux vidéos en Löve2d / Lua grâce à la formation <a href="https://www.gamecodeur.fr"
+            target="_blank">Gamecodeur</a>
         </p>
         <p>D'autres langages sont également étudiés tel que le C# avec le framework Monogame et le C avec SDL2</p>
       </div>
@@ -274,12 +292,34 @@
       <div class="block-part">
         <h2 class="intitule">Voyages</h2>
         <p>
-          J'ai eu l'occasion de voyager dans plusieurs pays tels que le Vietnam, l'Egypte, Cuba, le Mexique, la Croatie, la Russie et l'Afrique du Sud
+          J'ai eu l'occasion de voyager dans plusieurs pays tels que le Vietnam, l'Egypte, Cuba, le Mexique, la Croatie,
+          la Russie et l'Afrique du Sud
         </p>
       </div>
 
     </div>
   </section>
+
+  <script>
+
+    function calculateAge() {
+      let date_of_birth = new Date("02/12/1993")
+
+      let month_diff = Date.now() - date_of_birth.getTime()
+
+      //convert the calculated difference in date format  
+      let age_dt = new Date(month_diff)
+
+      //extract year from date      
+      let year = age_dt.getUTCFullYear()
+
+      //now calculate the age of the user  
+      let age = Math.abs(year - 1970)
+
+      alert(age)
+    }
+    
+  </script>
 </body>
 
 </html>
