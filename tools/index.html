@@ -47,13 +47,19 @@
   {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "MaxSpar - Votre comparaison de prix Amazon dans toute l'Europe",
-    "url": "https://tonybengue.fr/tools/amazon.html",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://fr.maxspar.de/s54242/{query}",
-      "query-input": "required name=query"
+    "name": "AmazonPriceCompare - Votre comparateur de prix pour Amazon en Europe",
+    "about": "Comparaison de prix parmis les boutiques Amazon en Europe",
+    "author": "Tony Bengué",
+    "copyrightHolder": "Tony Bengué",
+    "editor": "Tony Bengué",
+    "maintainer": "Tony Bengué",
+    "publisher": "Tony Bengué",
+    "dateCreated": 2022-07-23,
+    "locationCreated": {
+      "@type": "AdministrativeArea",
+      "name": "Limoges, France"
     }
+    "url": "https://tonybengue.fr/tools/amazon.html"
   }
   </script>
 
@@ -131,6 +137,8 @@
   </footer>
 
   <script>
+    // https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
+    // https://usefulangle.com/post/81/javascript-change-url-parameters
     let inputEL = document.querySelector('input')
     let searchEl = document.querySelector('#search')
     let resultEl = document.getElementById('result')
