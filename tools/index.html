@@ -40,9 +40,9 @@
   <meta name="msapplication-TileColor" content="#0099cb">
   <meta name="theme-color" content="#0099cb"> -->
   
-  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="//completion.amazon.co.uk" crossorigin>
-  <link rel="preconnect" href="//m.media-amazon.com" crossorigin>
+  <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="completion.amazon.co.uk" crossorigin>
+  <link rel="preconnect" href="m.media-amazon.com" crossorigin>
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -58,8 +58,8 @@
     "locationCreated": {
       "@type": "AdministrativeArea",
       "name": "Limoges, France"
-    }
-    "url": "https://tonybengue.fr/tools/amazon.html"
+    },
+    "url": "https://tonybengue.fr/tools/index.html"
   }
   </script>
 
@@ -70,20 +70,14 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140482097-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || []
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-140482097-1');
+    gtag('js', new Date())
+    gtag('config', 'UA-140482097-1')
   </script>
   
   <link preload rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.4/css/flag-icons.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      /* display: flex; */
-      /* justify-content: center; */
-    }
-  </style>
 </head>
 
 <body class="flex flex-col h-screen">
@@ -98,7 +92,7 @@
       <input type="text"
         class="w-full mr-5 p-2 border-2 border-black hover:border-orange-400 focus:bg-orange-200 outline-none"
         placeholder="Entrez le produit voulu, mots-clefs, n° ASIN (Samsung, B08RRYKFWM, jardinage, livre...)" />
-      <button class="p-2 bg-white border-2 border-black hover:border-orange-400 hover:bg-orange-200">Submit</button>
+      <button class="p-2 bg-white border-2 border-black hover:border-orange-400 hover:bg-orange-200" type="submit">Submit</button>
     </form>
 
     <h2 class="mt-4 mb-4 text-3xl title"></h2>

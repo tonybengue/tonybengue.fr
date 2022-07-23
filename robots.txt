@@ -1,2 +1,4 @@
 User-agent: *
 Sitemap: https://tonybengue.fr/sitemap.xml
+Allow : .js
+Allow : .css
