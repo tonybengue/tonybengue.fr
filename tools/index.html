@@ -185,16 +185,12 @@
       searchTerm = event.target.querySelector('input').value
       if (searchTerm === '') return alert('Submit a value')
       loaderEl.style.display = 'flex'
-      setTimeout(() => {
-        showNormalCards(searchTerm)
-        loaderEl.style.display = 'none'
-      }, 1000)
+      showNormalCards(searchTerm)
 
       resultEl.innerHTML = ''
       inputEL.focus()
       inputEL.value = ''
       document.querySelector('.title').innerText = ''
-      // window.location.href = 'http://127.0.0.1:3000/d:/Users/tonyb/Desktop/amz.html?item=' + searchTerm
     })
 
     function makeCards(result, category = '', searchTerm = '') {
