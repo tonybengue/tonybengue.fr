@@ -17,20 +17,4 @@
     <lastmod>2022-05-14</lastmod>
     <changefreq>monthly</changefreq>
 </url>
-<!-- tools -->
-<url>
-    <loc>https://tonybengue.fr/tools/index.html</loc>
-    <lastmod>2022-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-</url>
-<url>
-    <loc>https://tonybengue.fr/tools/mentions-legales.html</loc>
-    <lastmod>2022-07-23</lastmod>
-    <changefreq>yearly</changefreq>
-</url>
-<url>
-    <loc>https://tonybengue.fr/tools/cookies.html</loc>
-    <lastmod>2022-07-23</lastmod>
-    <changefreq>yearly</changefreq>
-</url>
 </urlset>
