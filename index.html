@@ -99,9 +99,9 @@
       "https://www.societe.com/societe/monsieur-tony-bengue-900180159.html"
     ]
   }
-</script>
+  </script>
   <script type="application/ld+json">
-    {
+  {
     "@context": "https://schema.org/",
     "@type": "AggregateRating",
     "itemReviewed": {
@@ -115,8 +115,8 @@
   }
   </script>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
+  {
+    "@context": "https://schema.org/",
     "@type": "Person",
     "@id": "#tonybengue",
     "name": "Tony Bengué",
@@ -186,11 +186,35 @@
   }
   </script>
 
+  <!-- FB chat plugin -->
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "113157167941493");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v14.0'
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
 
   <!-- Images -->
-  <link rel="icon"
+  <link 
+    rel="icon"
     href="https://lh5.googleusercontent.com/-u1atjAll_I4/AAAAAAAAAAI/AAAAAAAAAAA/nd5PnvPAMqI/s60-c-k-mo/photo.jpg"
     type="image/jpg" />
 
@@ -242,6 +266,10 @@
       <a href="./en/cv.html">CV 🇬🇧</a>
     </div>
   </main>
+
+  <!-- Messenger Plugin de discussion Code -->
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat"></div>  
 </body>
 
 </html>
