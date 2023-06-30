@@ -111,7 +111,7 @@
     "ratingValue": "5.0",
     "worstRating": "0",
     "bestRating": "5",
-    "ratingCount": "15"
+    "ratingCount": "34"
   }
   </script>
   <script type="application/ld+json">
@@ -189,7 +189,7 @@
   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
 
   <!-- Images -->
-  <link 
+  <link
     rel="icon"
     href="https://lh5.googleusercontent.com/-u1atjAll_I4/AAAAAAAAAAI/AAAAAAAAAAA/nd5PnvPAMqI/s60-c-k-mo/photo.jpg"
     type="image/jpg" />
@@ -208,19 +208,87 @@
   <!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
   <!-- CSS Libs -->
   <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+
+  <style>
+    .preloader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vw;
+      z-index: 10;
+      display: flex;
+    }
+
+    .preloader div {
+      height: 100%;
+      width: 50%;
+    }
+
+    .preloader div:first-child {
+      background-color: black;
+      animation: translate-left 1s ease-in-out forwards;
+    }
+
+    .preloader div:last-child {
+      background-color: black;
+      animation: translate-right 1s ease-in-out forwards;
+    }
+
+    @keyframes translate-left {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes translate-right {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+  </style>
 </head>
 
 <body>
   <header></header>
   <main>
-    <div class="intro">Bonjour, je suis Tony!</div>
+    <!-- <div class="preloader">
+      <div></div>
+      <div></div>
+    </div> -->
+
+    <div class="colors">
+      <div style="--data-color: #112b53"></div>
+      <div style="--data-color: #303F9F"></div>
+      <div style="--data-color: #425eb0"></div>
+      <div style="--data-color: #8994fc"></div>
+      <div style="--data-color: #8425A3"></div>
+      <div style="--data-color: #ff1d58"></div>
+      <div style="--data-color: #f75990"></div>
+      <div style="--data-color: #a28089"></div>
+      <div style="--data-color: #00718e"></div>
+      <div style="--data-color: #00ac95"></div>
+    </div>
+
+    <!-- <div class="contact"></div> -->
+
+    <div class="intro"><span>👋</span>Bonjour, je suis Tony !</div>
     <div class="tagline">All-Star Dev | Code Fanatic | Linux Explorer | Lua addict</div>
     <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
     <div class="icons-social">
       <a target="_blank" href="https://github.com/tonybengue/tonybengue.fr">
         <i class="fab fa-github"></i>
       </a>
-      <a target="_blank" href="https://twitter.com/tony_bengue">
+      <a target="_blank" href="https://twitter.com/tonybengue">
         <i class="fab fa-twitter"></i>
       </a>
       <a target="_blank" href="https://stackoverflow.com/users/9480924/bengu%c3%a9-tony?tab=profile">
@@ -238,8 +306,8 @@
     </div>
 
     <div class="cv">
-      <a href="./fr/cv.html">CV 🇫🇷</a>
-      <a href="./en/cv.html">CV 🇬🇧</a>
+      <a href="./cv/fr.html">CV 🇫🇷</a>
+      <a href="./cv/en.html">CV 🇬🇧</a>
     </div>
   </main>
 
@@ -265,6 +333,17 @@
       js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <script>
+    let colorsEl = document.querySelector('.colors')
+    let colors = colorsEl.querySelectorAll('div')
+    colors.forEach(color => {
+      color.addEventListener('click', () => {
+        // let colorAttr = color.getAttribute('data-color')
+        document.querySelector('main').style.backgroundColor = getComputedStyle(color).getPropertyValue('--data-color')
+      })
+    })
   </script>
 </body>
 

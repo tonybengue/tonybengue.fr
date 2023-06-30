@@ -43,13 +43,28 @@ main {
 	text-align: center;
 }
 
-main>.intro {
+main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 }
 
-main>.tagline {
+.intro span {
+	display: inline-block;
+	animation: hand 1s infinite alternate ease-in;
+	transform-origin: center;
+}
+
+@keyframes hand {
+	from {
+		rotate: -10deg;
+	}
+	to {
+		rotate: 10deg;
+	}
+}
+
+main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
@@ -57,6 +72,11 @@ main>.tagline {
 
 .icons-social i {
 	padding: 10px;
+	transition: scale 0.3s ease-in-out;
+}
+
+.icons-social i:hover {
+	scale: 1.05;
 }
 
 .devto {
@@ -87,4 +107,26 @@ main>.tagline {
 	margin-right: 50px;
 	font-size: 2.2rem;
 	display: inline-block;
+}
+
+.colors {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	display: flex;
+	gap: 10px;
+}
+
+.colors div {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transform: .3s ease-in-out;
+	cursor: pointer;
+	background-color: var(--data-color);
+	border: 1px solid black;
+}
+
+.colors div:hover {
+	scale: 1.05;
 }
