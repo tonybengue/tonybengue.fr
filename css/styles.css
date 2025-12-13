@@ -121,7 +121,7 @@ main > .tagline {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	transform: .3s ease-in-out;
+	transition: .3s ease-in-out;
 	cursor: pointer;
 	background-color: var(--data-color);
 	border: 1px solid black;
